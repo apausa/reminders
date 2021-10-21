@@ -14,12 +14,12 @@ export default function List() {
   const reset = (tasks: Task[]) => dispatch(resetList(tasks));
   const update = (task: any) => dispatch(updateTask(task));
   return (
-    <main className="weventure">
+    <main className="index">
       <Input />
       { (list.length === 0)
         ? <Placeholder />
         : (
-          <ul className="weventure__list">
+          <ul className="index__list">
             { list.map((task: Task) => (
               <li className="list__task">
                 <form className="task__form">

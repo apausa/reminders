@@ -12,7 +12,7 @@ export default function Input() {
   };
   return (
     <input
-      className="weventure__input"
+      className="index__input"
       type="text"
       name="input"
       placeholder="What needs to be accomplished today?"

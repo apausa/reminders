@@ -12,17 +12,17 @@ $supermodule: 32px;
 	vertical-align: baseline;
 }
 
-.weventure {
+.index {
   font-family: 'Helvetica Neue', Helvetica, sans-serif;
   max-width: 600px;
   margin: $module auto;
   color: $black;
-  .weventure__title {
+  .index__title {
     font-size: 24px;
     font-weight: bold;
     margin-top: $module;
   }
-  .weventure__input {
+  .index__input {
     width: 100%;
     margin-top: $module * 2;
     border: 1px solid $black;
@@ -30,14 +30,14 @@ $supermodule: 32px;
     height: $supermodule;
     padding-left: $module;
   }
-  .weventure__list {
+  .index__list {
     width: 100%;
     margin-top: $module;
     list-style: none;
     border: 1px solid $black;
     border-radius: $module;
   }
-  .weventure__placeholder {
+  .index__placeholder {
     width: 100%;
     margin-top: $module;
     border: 1px solid $black;
@@ -50,12 +50,12 @@ $supermodule: 32px;
   }
 }
 
-.weventure__input:focus {
+.index__input:focus {
   outline: none;
   border: 1px solid blue;
 }
 
-.weventure__input::placeholder {
+.index__input::placeholder {
   color: gray;
 }
 
