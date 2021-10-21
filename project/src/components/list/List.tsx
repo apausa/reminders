@@ -43,13 +43,3 @@ export default function Tasks() {
     </ul>
   );
 }
-
-/*
-
-import '../styles/listStyle.scss';
-
-(
-
-        )
-
-    */
