@@ -2,7 +2,7 @@ import React from 'react';
 import { useSelector } from 'react-redux';
 
 import Input from '../input/input';
-import Placeholder from '../palceholder/placeholder';
+import Placeholder from '../placeholder/placeholder';
 import List from './list/List';
 
 export default function Page() {
