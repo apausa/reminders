@@ -1,5 +1,5 @@
 import actions from './taskActions';
-import { Task } from '../../../types/taskTypes';
+import { Task } from '../../types/interfaces';
 
 export function createTask(task: Task) {
   return (dispatch: any) => {
@@ -24,6 +24,15 @@ export function updateTask(task: Task) {
     dispatch({
       type: actions.UPDATE_TASK,
       task,
+    });
+  };
+}
+
+export default function resetList(list: Task[]) {
+  return (dispatch: any) => {
+    dispatch({
+      type: actions.RESET_LIST,
+      list,
     });
   };
 }
