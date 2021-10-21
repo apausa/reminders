@@ -1,6 +1,7 @@
 /* eslint-disable no-param-reassign */
-import actions from '../actions/taskTypes';
-import { Task, Action } from '../../types/interfaces';
+import taskActions from '../actions/taskActions';
+import listActions from '../actions/listActions';
+import { Task, Action } from '../../types/taskTypes';
 
 export default function Reducer(initial: Task[] = [], action: Action) {
   let list = initial;
@@ -9,9 +10,9 @@ export default function Reducer(initial: Task[] = [], action: Action) {
     if (task === action.task) task.state = (task.state === false);
     return task;
   };
-  if (action.type === actions.CREATE_TASK) list = [action.task, ...list];
-  if (action.type === actions.REMOVE_TASK) list = list.filter(removeTask);
-  if (action.type === actions.UPDATE_TASK) list = list.map(updateTask);
-  if (action.type === actions.RESET_LIST) list = [];
+  if (action.type === taskActions.CREATE_TASK) list = [action.task, ...list];
+  if (action.type === taskActions.REMOVE_TASK) list = list.filter(removeTask);
+  if (action.type === taskActions.UPDATE_TASK) list = list.map(updateTask);
+  if (action.type === listActions.RESET_LIST) list = [];
   return list;
 }
