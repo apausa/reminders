@@ -1,8 +1,8 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
 
-import Input from '../input/input';
-import Placeholder from '../placeholder/placeholder';
+import Input from './input/Input';
+import Placeholder from './placeholder/Placeholder';
 import List from './list/List';
 
 export default function Page() {
