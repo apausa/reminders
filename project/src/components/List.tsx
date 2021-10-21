@@ -1,9 +1,10 @@
 import React from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 
-import { removeTask, resetList, updateTask } from '../redux/actions/taskCreator';
+import { removeTask, updateTask } from '../redux/actions/taskCreator';
 import { Task } from '../types/interfaces';
 import Input from './input/Input';
+import Title from './title/Title';
 import Placeholder from './placeholder/Placeholder';
 import './pageStyles.scss';
 
@@ -11,15 +12,15 @@ export default function List() {
   const dispatch = useDispatch();
   const list = useSelector(({ taskReducer }: any) => taskReducer);
   const remove = (task: Task) => dispatch(removeTask(task));
-  const reset = (tasks: Task[]) => dispatch(resetList(tasks));
   const update = (task: any) => dispatch(updateTask(task));
   return (
-    <main className="index">
+    <main className="main">
+      <Title />
       <Input />
       { (list.length === 0)
         ? <Placeholder />
         : (
-          <ul className="index__list">
+          <ul className="main__list">
             { list.map((task: Task) => (
               <li className="list__task">
                 <form className="task__form">
@@ -42,13 +43,6 @@ export default function List() {
                 </form>
               </li>
             ))}
-            <button
-              className="list__reset"
-              type="button"
-              onClick={() => reset(list)}
-            >
-              Clear all
-            </button>
           </ul>
         )}
     </main>

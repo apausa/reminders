@@ -1,123 +1,55 @@
-$black: rgb(45, 41, 38);
-$module: 8px;
-$supermodule: 32px;
+@import "../utils/variables.scss";
 
-* {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-  box-sizing: border-box;
-	vertical-align: baseline;
-}
-
-.index {
+.main {
   font-family: 'Helvetica Neue', Helvetica, sans-serif;
-  max-width: 600px;
-  margin: $module auto;
-  color: $black;
-  .index__title {
-    font-size: 24px;
-    font-weight: bold;
-    margin-top: $module;
-  }
-  .index__input {
+  max-width: 720px;
+  margin: 0 auto;
+  .main__list {
     width: 100%;
-    margin-top: $module * 2;
-    border: 1px solid $black;
-    border-radius: $module;
-    height: $supermodule;
-    padding-left: $module;
-  }
-  .index__list {
-    width: 100%;
-    margin-top: $module;
     list-style: none;
-    border: 1px solid $black;
-    border-radius: $module;
   }
-  .index__placeholder {
-    width: 100%;
-    margin-top: $module;
-    border: 1px solid $black;
-    border-radius: $module;
-    height: 32px;
-    line-height: 28px;
-    background-color: lightgray;
-    font-size: 16px;
-    padding-left: 8px;
-  }
-}
-
-.index__input:focus {
-  outline: none;
-  border: 1px solid blue;
-}
-
-.index__input::placeholder {
-  color: gray;
 }
 
 .list__task {
-  border-top: 1px solid $black;
-}
-
-.list__task:first-child {
-  border-radius: $module $module 0 0 ;
-  border-top: 1px solid transparent;
+  height: 32px;
+  padding: 0 8px;
+  border-bottom: 1px solid $pantoneCoolGray8C;
+  width: 100%;
 }
 
 .task__form {
-  padding-left: $module;
-  height: $supermodule;
+  height: 100%;
+  font-size: 16px;
   display: flex; 
   flex-direction: row;
   justify-content: space-between;
   .form__text--unstriked {
+    font: 16px;
     background-color: transparent;
     width: 100%;
-    color: $black;
+    color: $pantoneNeutralBlackC;
     padding-right: 100%;
     margin-right: -32px;
+    white-space: nowrap;
   }
   .form__text--striked {
-    color: $black;
+    font: 16px;
+    background-color: transparent;
+    width: 100%;
+    color: $pantoneCoolGray8C;
     padding-right: 100%;
     margin-right: -32px;
-    background-color: transparent;
+    white-space: nowrap;
     text-decoration: line-through;
-    width: 100%;
   }
   .form__remove {
-    width: $supermodule;
-    color: $black;
-    background-color: transparent;
+    font-size: 16px;
+    font-weight: bold;
+    color: transparent;
   }
-}
-
-.task__form:hover {
-  .form__text--unstriked {
-    color: blue;
+  .form__remove {
+    font-size: 16px;
+    font-weight: bold;
+    color: $pantoneBlue072C;
   }
-  .form__text--striked {
-    color: blue;
-  }
-}
-
-.form__remove:hover {
-  color: blue;
-}
-
-.list__reset {
-  width: 100%;
-  height :$supermodule;
-  list-style: none;
-  border-top: 1px solid $black;
-  border-radius: 0 0 $module $module;
-  background-color: lightgray;
-}
-
-.list__reset:hover {
-  color: blue;
 }

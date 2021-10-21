@@ -27,12 +27,3 @@ export function updateTask(task: Task) {
     });
   };
 }
-
-export function resetList(list: Task[]) {
-  return (dispatch: any) => {
-    dispatch({
-      type: actions.RESET_LIST,
-      list,
-    });
-  };
-}
