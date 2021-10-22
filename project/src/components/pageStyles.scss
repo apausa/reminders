@@ -36,12 +36,11 @@
     font: 16px;
     background-color: transparent;
     width: 100%;
-    color: $pantoneNeutralBlackC;
+    color: $pantoneCoolGray7C;
     padding-right: 100%;
     margin-right: -32px;
     white-space: nowrap;
     text-decoration: line-through;
-    color: $pantoneCoolGray11C;
   }
   .form__remove {
     font-size: 16px;
@@ -51,9 +50,6 @@
 
 .task__form:hover {
   .form__text--unstriked {
-    color: $pantoneCoolGray11C;
-  }
-  .form__text--striked {
     color: $pantoneCoolGray11C;
   }
 }
