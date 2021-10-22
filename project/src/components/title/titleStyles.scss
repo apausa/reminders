@@ -1,0 +1,18 @@
+@import "../../utils/variables.scss";
+
+.main__titles {
+    display: flex; 
+    justify-content: space-between;
+    margin-top: 16px;
+    .title__reminders {
+        font-size: 32px;
+        font-weight: bold;
+        color: $pantoneBlue072C;
+    }
+    .title__length {
+        font-size: 32px;
+        font-weight: bold;
+        color: $pantoneBlue072C;
+        margin-right: 8px;
+    }
+}
