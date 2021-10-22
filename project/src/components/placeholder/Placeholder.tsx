@@ -1,5 +1,6 @@
 import React from 'react';
+import './placeholderStyles.scss';
 
-const Placeholder = () => <p className="main__placeholder">Write you first task!</p>;
+const Placeholder = () => <div className="main__placeholder">Write you first task!</div>;
 
 export default Placeholder;

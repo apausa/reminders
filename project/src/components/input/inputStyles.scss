@@ -1,19 +1,19 @@
 @import "../../utils/variables.scss";
 
 .main__input {
-    width: 100%;
+    width: 710px;
     height: 32px;
     font-size: 16px;
-    border: 1px solid $pantoneCoolGray8C;
+    border: 1px solid $pantoneCoolGray7C;
     border-radius: 8px;
-    padding: 0 8px;
+    padding-left: 8px;
     margin-top: 16px;
     margin-bottom: 8px;
     color: $pantoneNeutralBlackC;
 }
 
 .main__input::placeholder {
-    color: $pantoneCoolGray8C;
+    color: $pantoneCoolGray11C;
 }
 
 .main__input:focus {

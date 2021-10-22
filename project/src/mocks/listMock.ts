@@ -1,18 +1,30 @@
 export default [
   {
-    description: 'FaceTime Grandma',
+    description: 'Finalize kickoff materials',
     state: false,
   },
   {
-    description: 'Return 📚 to the library',
+    description: 'Refine objectives',
     state: false,
   },
   {
-    description: 'Pick up 🥡 dinner for the family',
+    description: 'Identify key resources',
     state: false,
   },
   {
-    description: 'Send out team progress report',
+    description: 'Update contractor agreement',
+    state: false,
+  },
+  {
+    description: 'Conduct risk assesment',
+    state: false,
+  },
+  {
+    description: 'Monitor budget',
+    state: false,
+  },
+  {
+    description: 'Develop communication plan',
     state: false,
   },
 ];

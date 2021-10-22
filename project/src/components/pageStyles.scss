@@ -2,7 +2,7 @@
 
 .main {
   font-family: 'Helvetica Neue', Helvetica, sans-serif;
-  max-width: 720px;
+  width: 720px;
   margin: 0 auto;
   .main__list {
     width: 100%;
@@ -13,8 +13,8 @@
 .list__task {
   height: 32px;
   padding: 0 8px;
-  border-bottom: 1px solid $pantoneCoolGray8C;
-  width: 100%;
+  border-bottom: 1px solid $pantoneCoolGray7C;
+  width: 704px;
 }
 
 .task__form {
@@ -36,20 +36,24 @@
     font: 16px;
     background-color: transparent;
     width: 100%;
-    color: $pantoneCoolGray8C;
+    color: $pantoneNeutralBlackC;
     padding-right: 100%;
     margin-right: -32px;
     white-space: nowrap;
     text-decoration: line-through;
+    color: $pantoneCoolGray11C;
   }
   .form__remove {
     font-size: 16px;
-    font-weight: bold;
-    color: transparent;
-  }
-  .form__remove {
-    font-size: 16px;
-    font-weight: bold;
     color: $pantoneBlue072C;
+  }
+}
+
+.task__form:hover {
+  .form__text--unstriked {
+    color: $pantoneCoolGray11C;
+  }
+  .form__text--striked {
+    color: $pantoneCoolGray11C;
   }
 }
