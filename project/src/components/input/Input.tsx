@@ -16,7 +16,7 @@ export default function Input() {
       className="main__input"
       type="text"
       name="input"
-      placeholder="Write your reminder"
+      placeholder="Write a reminder!"
       value={description}
       onChange={({ target: { value } }: any) => setDescription(value)}
       onKeyPress={({ target: { value }, which }: any) => { create(value, which); }}
